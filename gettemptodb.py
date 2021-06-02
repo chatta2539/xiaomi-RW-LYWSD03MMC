@@ -26,7 +26,7 @@ dbClient = InfluxDBClient(host='127.0.0.1', port=8086, database='raehdb')
 
 
 
-# dbClient.write_points(loginEvents)
+dbClient.write_points(loginEvents)
 # print(loginEvents)
 # loginRecords = dbClient.query('select * from xiaomiTemp;')
 # print(loginRecords)
